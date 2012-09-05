@@ -1,0 +1,551 @@
+[664ec7c1fcd] {jit-log-opt-loop
+# Loop 0 (( App : ( Id : f ) ( Num : 5 ) )) : loop with 546 ops
+[p0, p1, p2]
++97: label(p0, p1, p2, descr=TargetToken(4302267040))
+debug_merge_point(0, 0, '( App : ( Id : f ) ( Num : 5 ) )')
++104: guard_nonnull_class(p1, 4297287752, descr=<Guard92>) [p2, p1, p0]
+debug_merge_point(0, 0, '( Num : 5 )')
+debug_merge_point(0, 0, '( Id : f )')
++122: p4 = getfield_gc(p0, descr=<FieldP interpretIterNone.Map.inst_values 8>)
+p6 = newstr(17)
++217: copystrcontent(ConstPtr(ptr7), p6, 0, 0, 16)
++279: strsetitem(p6, 16, 102)
++291: i16 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p4, ConstPtr(ptr14), 13056039271, descr=<Calli 8 rri EF=4>)
++348: guard_no_exception(, descr=<Guard93>) [p0, i16, p4, p6, p1]
++368: i18 = int_and(i16, -9223372036854775808)
++384: i19 = int_is_true(i18)
+guard_false(i19, descr=<Guard94>) [p0, i16, p4, p6, p1]
++394: p20 = getfield_gc(p4, descr=<FieldP dicttable.entries 24>)
++405: p21 = getinteriorfield_gc(p20, i16, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++414: guard_nonnull_class(p21, 4297287832, descr=<Guard95>) [p21, p0, None, p1]
++432: p24 = getfield_gc(p21, descr=<FieldP interpretIterNone.ReturnType.inst_arg 8>)
++436: p25 = getfield_gc(p21, descr=<FieldP interpretIterNone.ReturnType.inst_env 24>)
++440: p26 = getfield_gc_pure(p24, descr=<FieldP parser.Id.inst_name 8>)
++444: p27 = getfield_gc(p25, descr=<FieldP interpretIterNone.Map.inst_values 8>)
+p28 = new(, descr=<SizeDescr 32>)
+p30 = new_array(8, descr=<ArrayX 16>)
++563: setfield_gc(p28, p30, descr=<FieldP dicttable.entries 24>)
++567: setfield_gc(p28, 16, descr=<FieldS dicttable.resize_counter 16>)
++575: call(ConstClass(ll_update__dicttablePtr_dicttablePtr), p28, p27, descr=<Callv 0 rr EF=4>)
++623: guard_no_exception(, descr=<Guard96>) [p21, p26, p28, p1]
++643: i34 = call(ConstClass(ll_strhash__rpy_stringPtr), p26, descr=<Calli 8 r EF=0>)
++674: i36 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p28, p26, i34, descr=<Calli 8 rri EF=4>)
++722: guard_no_exception(, descr=<Guard97>) [p21, i34, i36, p26, p28, None, p1]
+p38 = new_with_vtable(4297287672)
++825: call(ConstClass(_ll_dict_setitem_lookup_done_trampoline__v23___simple_call__function__l), p28, p26, p38, i34, i36, descr=<Callv 0 rrrii EF=4>)
++887: setfield_gc(p38, 5, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++902: guard_no_exception(, descr=<Guard98>) [p21, p28, p38, p1]
++922: p41 = getfield_gc(p21, descr=<FieldP interpretIterNone.ReturnType.inst_body 16>)
++933: guard_value(p41, ConstPtr(ptr42), descr=<Guard99>) [p21, p1, p41, p28, None, None]
+debug_merge_point(0, 0, '( Op : ( Op : ( Id : x ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) ) + ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) ) + ( Op : ( Num : 0 ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p44 = newstr(17)
++1036: copystrcontent(ConstPtr(ptr7), p44, 0, 0, 16)
++1084: strsetitem(p44, 16, 120)
++1096: i53 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p28, ConstPtr(ptr51), 15360046201, descr=<Calli 8 rri EF=4>)
++1153: guard_no_exception(, descr=<Guard100>) [i53, p28, p1, p44]
++1173: i55 = int_and(i53, -9223372036854775808)
++1189: i56 = int_is_true(i55)
+guard_false(i56, descr=<Guard101>) [i53, p28, p1, p44]
++1199: p57 = getfield_gc(p28, descr=<FieldP dicttable.entries 24>)
++1210: p58 = getinteriorfield_gc(p57, i53, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++1219: guard_nonnull_class(p58, 4297287672, descr=<Guard102>) [p58, p28, p1, None]
+debug_merge_point(0, 0, '( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) ) )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p61 = newstr(17)
++1328: copystrcontent(ConstPtr(ptr7), p61, 0, 0, 16)
++1380: strsetitem(p61, 16, 120)
++1392: i70 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p28, ConstPtr(ptr68), 15360046201, descr=<Calli 8 rri EF=4>)
++1449: guard_no_exception(, descr=<Guard103>) [i70, p28, p58, p1, p61]
++1469: i72 = int_and(i70, -9223372036854775808)
++1485: i73 = int_is_true(i72)
+guard_false(i73, descr=<Guard104>) [i70, p28, p58, p1, p61]
++1495: p74 = getinteriorfield_gc(p57, i70, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++1511: guard_nonnull_class(p74, 4297287672, descr=<Guard105>) [p74, p28, p58, p1, None]
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p77 = newstr(17)
++1613: copystrcontent(ConstPtr(ptr7), p77, 0, 0, 16)
++1668: strsetitem(p77, 16, 120)
++1680: i86 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p28, ConstPtr(ptr84), 15360046201, descr=<Calli 8 rri EF=4>)
++1737: guard_no_exception(, descr=<Guard106>) [i86, p28, p58, p1, p74, p77]
++1757: i88 = int_and(i86, -9223372036854775808)
++1773: i89 = int_is_true(i88)
+guard_false(i89, descr=<Guard107>) [i86, p28, p58, p1, p74, p77]
++1783: p90 = getinteriorfield_gc(p57, i86, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++1799: guard_nonnull_class(p90, 4297287672, descr=<Guard108>) [p90, p28, p58, p1, p74, None]
+debug_merge_point(0, 0, '( Id : x )')
+p93 = newstr(17)
++1901: copystrcontent(ConstPtr(ptr7), p93, 0, 0, 16)
++1953: strsetitem(p93, 16, 120)
++1965: i102 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p28, ConstPtr(ptr100), 15360046201, descr=<Calli 8 rri EF=4>)
++2022: guard_no_exception(, descr=<Guard109>) [i102, p28, p58, p90, p1, p74, p93]
++2042: i104 = int_and(i102, -9223372036854775808)
++2058: i105 = int_is_true(i104)
+guard_false(i105, descr=<Guard110>) [i102, p28, p58, p90, p1, p74, p93]
++2068: p106 = getinteriorfield_gc(p57, i102, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++2084: guard_nonnull_class(p106, 4297287672, descr=<Guard111>) [p106, p28, p58, p90, p1, p74, None]
++2102: i108 = getfield_gc(p90, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++2113: i109 = getfield_gc(p106, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++2117: i110 = int_add(i108, i109)
++2120: i111 = getfield_gc(p74, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++2131: i112 = int_add(i111, i110)
++2134: i113 = getfield_gc(p58, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++2145: i114 = int_add(i113, i112)
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) ) + ( Op : ( Num : 0 ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p116 = newstr(17)
++2239: copystrcontent(ConstPtr(ptr7), p116, 0, 0, 16)
++2287: strsetitem(p116, 16, 120)
++2299: i125 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p28, ConstPtr(ptr123), 15360046201, descr=<Calli 8 rri EF=4>)
++2356: guard_no_exception(, descr=<Guard112>) [i125, p28, p1, p116, i114]
++2376: i127 = int_and(i125, -9223372036854775808)
++2392: i128 = int_is_true(i127)
+guard_false(i128, descr=<Guard113>) [i125, p28, p1, p116, i114]
++2402: p129 = getinteriorfield_gc(p57, i125, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++2418: guard_nonnull_class(p129, 4297287672, descr=<Guard114>) [p129, p28, p1, None, i114]
+debug_merge_point(0, 0, '( Id : x )')
+p132 = newstr(17)
++2520: copystrcontent(ConstPtr(ptr7), p132, 0, 0, 16)
++2572: strsetitem(p132, 16, 120)
++2584: i141 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p28, ConstPtr(ptr139), 15360046201, descr=<Calli 8 rri EF=4>)
++2641: guard_no_exception(, descr=<Guard115>) [i141, p28, p1, i114, p132, p129]
++2661: i143 = int_and(i141, -9223372036854775808)
++2677: i144 = int_is_true(i143)
+guard_false(i144, descr=<Guard116>) [i141, p28, p1, i114, p132, p129]
++2687: p145 = getinteriorfield_gc(p57, i141, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++2703: guard_nonnull_class(p145, 4297287672, descr=<Guard117>) [p145, p28, p1, i114, None, p129]
++2721: i147 = getfield_gc(p129, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++2732: i148 = getfield_gc(p145, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++2736: i149 = int_add(i147, i148)
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p151 = newstr(17)
++2823: copystrcontent(ConstPtr(ptr7), p151, 0, 0, 16)
++2875: strsetitem(p151, 16, 120)
++2887: i160 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p28, ConstPtr(ptr158), 15360046201, descr=<Calli 8 rri EF=4>)
++2944: guard_no_exception(, descr=<Guard118>) [i160, p28, p1, i114, i149, p151]
++2964: i162 = int_and(i160, -9223372036854775808)
++2980: i163 = int_is_true(i162)
+guard_false(i163, descr=<Guard119>) [i160, p28, p1, i114, i149, p151]
++2990: p164 = getinteriorfield_gc(p57, i160, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++3006: guard_nonnull_class(p164, 4297287672, descr=<Guard120>) [p164, p28, p1, i114, i149, None]
+debug_merge_point(0, 0, '( Id : x )')
+p167 = newstr(17)
++3108: copystrcontent(ConstPtr(ptr7), p167, 0, 0, 16)
++3163: strsetitem(p167, 16, 120)
++3175: i176 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p28, ConstPtr(ptr174), 15360046201, descr=<Calli 8 rri EF=4>)
++3232: guard_no_exception(, descr=<Guard121>) [i176, p28, p167, p1, p164, i114, i149]
++3252: i178 = int_and(i176, -9223372036854775808)
++3268: i179 = int_is_true(i178)
+guard_false(i179, descr=<Guard122>) [i176, p28, p167, p1, p164, i114, i149]
++3278: p180 = getinteriorfield_gc(p57, i176, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++3294: guard_nonnull_class(p180, 4297287672, descr=<Guard123>) [p180, p28, None, p1, p164, i114, i149]
++3312: i182 = getfield_gc(p164, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++3323: i183 = getfield_gc(p180, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++3327: i184 = int_add(i182, i183)
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
++3330: i185 = int_add(i149, i184)
+debug_merge_point(0, 0, '( Op : ( Num : 0 ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) ) )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p187 = newstr(17)
++3424: copystrcontent(ConstPtr(ptr7), p187, 0, 0, 16)
++3479: strsetitem(p187, 16, 120)
++3491: i196 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p28, ConstPtr(ptr194), 15360046201, descr=<Calli 8 rri EF=4>)
++3548: guard_no_exception(, descr=<Guard124>) [i196, p28, i114, i185, p1, p187]
++3568: i198 = int_and(i196, -9223372036854775808)
++3584: i199 = int_is_true(i198)
+guard_false(i199, descr=<Guard125>) [i196, p28, i114, i185, p1, p187]
++3594: p200 = getinteriorfield_gc(p57, i196, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++3610: guard_nonnull_class(p200, 4297287672, descr=<Guard126>) [p200, p28, i114, i185, p1, None]
+debug_merge_point(0, 0, '( Id : x )')
+p203 = newstr(17)
++3712: copystrcontent(ConstPtr(ptr7), p203, 0, 0, 16)
++3767: strsetitem(p203, 16, 120)
++3779: i212 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p28, ConstPtr(ptr210), 15360046201, descr=<Calli 8 rri EF=4>)
++3836: guard_no_exception(, descr=<Guard127>) [i212, p28, i114, i185, p1, p203, p200]
++3856: i214 = int_and(i212, -9223372036854775808)
++3872: i215 = int_is_true(i214)
+guard_false(i215, descr=<Guard128>) [i212, p28, i114, i185, p1, p203, p200]
++3882: p216 = getinteriorfield_gc(p57, i212, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++3898: guard_nonnull_class(p216, 4297287672, descr=<Guard129>) [p216, p28, i114, i185, p1, None, p200]
++3916: i218 = getfield_gc(p200, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++3927: i219 = getfield_gc(p216, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++3931: i220 = int_add(i218, i219)
++3934: i221 = int_add(i185, i220)
++3944: i222 = int_add(i114, i221)
++3954: p223 = getfield_gc(p1, descr=<FieldP interpretIterNone.App1K.inst_fun 16>)
++3965: p224 = getfield_gc(p1, descr=<FieldP interpretIterNone.App1K.inst_k 24>)
++3969: p225 = getfield_gc(p1, descr=<FieldP interpretIterNone.App1K.inst_env 8>)
++3973: guard_value(p223, ConstPtr(ptr226), descr=<Guard130>) [p225, p223, p224, i222, None, None, None, None, None, None]
+debug_merge_point(0, 0, '( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) )')
++3992: p227 = getfield_gc(p225, descr=<FieldP interpretIterNone.Map.inst_values 8>)
+p228 = new(, descr=<SizeDescr 32>)
+p230 = new_array(8, descr=<ArrayX 16>)
++4111: setfield_gc(p228, p230, descr=<FieldP dicttable.entries 24>)
++4115: setfield_gc(p228, 16, descr=<FieldS dicttable.resize_counter 16>)
++4123: call(ConstClass(ll_update__dicttablePtr_dicttablePtr), p228, p227, descr=<Callv 0 rr EF=4>)
++4178: guard_no_exception(, descr=<Guard131>) [p224, i222, p225, p228]
++4198: i236 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p228, ConstPtr(ptr234), 15488046584, descr=<Calli 8 rri EF=4>)
++4255: guard_no_exception(, descr=<Guard132>) [i236, p228, p224, i222, p225, None]
+p238 = new_with_vtable(4297287672)
++4358: call(ConstClass(_ll_dict_setitem_lookup_done_trampoline__v23___simple_call__function__l), p228, ConstPtr(ptr234), p238, 15488046584, i236, descr=<Callv 0 rrrii EF=4>)
++4432: setfield_gc(p238, i222, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++4450: guard_no_exception(, descr=<Guard133>) [p224, p225, p228, p238]
+debug_merge_point(0, 0, '( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) )')
++4470: guard_nonnull_class(p224, 4297291664, descr=<Guard134>) [p224, None, p225, p228, None]
+debug_merge_point(0, 0, '( Op : ( Id : x ) - ( Num : 1 ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p242 = newstr(17)
++4579: copystrcontent(ConstPtr(ptr7), p242, 0, 0, 16)
++4627: strsetitem(p242, 16, 120)
++4639: i251 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p228, ConstPtr(ptr249), 15360046201, descr=<Calli 8 rri EF=4>)
++4696: guard_no_exception(, descr=<Guard135>) [i251, p228, p224, p242]
++4716: i253 = int_and(i251, -9223372036854775808)
++4732: i254 = int_is_true(i253)
+guard_false(i254, descr=<Guard136>) [i251, p228, p224, p242]
++4742: p255 = getfield_gc(p228, descr=<FieldP dicttable.entries 24>)
++4753: p256 = getinteriorfield_gc(p255, i251, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++4762: guard_nonnull_class(p256, 4297287672, descr=<Guard137>) [p256, p228, p224, None]
+debug_merge_point(0, 0, '( Num : 1 )')
++4780: i258 = getfield_gc(p256, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++4784: i260 = int_sub(i258, 1)
+debug_merge_point(0, 0, '( Id : run )')
+p262 = newstr(19)
++4879: copystrcontent(ConstPtr(ptr7), p262, 0, 0, 16)
++4931: strsetitem(p262, 16, 114)
++4943: strsetitem(p262, 17, 117)
++4948: strsetitem(p262, 18, 110)
++4953: i275 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p228, ConstPtr(ptr273), 756880090362066628, descr=<Calli 8 rri EF=4>)
++5010: guard_no_exception(, descr=<Guard138>) [i275, p228, p262, p224, i260]
++5030: i277 = int_and(i275, -9223372036854775808)
++5046: i278 = int_is_true(i277)
+guard_false(i278, descr=<Guard139>) [i275, p228, p262, p224, i260]
++5056: p279 = getinteriorfield_gc(p255, i275, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++5072: guard_nonnull_class(p279, 4297287832, descr=<Guard140>) [p279, p228, None, p224, i260]
++5090: p281 = getfield_gc(p279, descr=<FieldP interpretIterNone.ReturnType.inst_arg 8>)
++5094: p282 = getfield_gc(p279, descr=<FieldP interpretIterNone.ReturnType.inst_env 24>)
++5098: p283 = getfield_gc_pure(p281, descr=<FieldP parser.Id.inst_name 8>)
++5102: p284 = getfield_gc(p282, descr=<FieldP interpretIterNone.Map.inst_values 8>)
+p285 = new(, descr=<SizeDescr 32>)
+p287 = new_array(8, descr=<ArrayX 16>)
++5221: setfield_gc(p285, p287, descr=<FieldP dicttable.entries 24>)
++5225: setfield_gc(p285, 16, descr=<FieldS dicttable.resize_counter 16>)
++5233: call(ConstClass(ll_update__dicttablePtr_dicttablePtr), p285, p284, descr=<Callv 0 rr EF=4>)
++5281: guard_no_exception(, descr=<Guard141>) [p279, p283, p224, i260, p285]
++5301: i291 = call(ConstClass(ll_strhash__rpy_stringPtr), p283, descr=<Calli 8 r EF=0>)
++5332: i293 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p285, p283, i291, descr=<Calli 8 rri EF=4>)
++5380: guard_no_exception(, descr=<Guard142>) [p279, i291, i293, p283, p285, p224, i260, None]
+p295 = new_with_vtable(4297287672)
++5483: call(ConstClass(_ll_dict_setitem_lookup_done_trampoline__v23___simple_call__function__l), p285, p283, p295, i291, i293, descr=<Callv 0 rrrii EF=4>)
++5545: setfield_gc(p295, i260, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++5563: guard_no_exception(, descr=<Guard143>) [p279, p224, p285, p295]
++5583: p297 = getfield_gc(p279, descr=<FieldP interpretIterNone.ReturnType.inst_body 16>)
++5594: guard_value(p297, ConstPtr(ptr298), descr=<Guard144>) [p279, p224, p297, None, p285, None]
+debug_merge_point(0, 0, '( If : ( Id : x ) == 0 then ( App : ( Id : f ) ( Num : 5 ) ) else ( App : ( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) ) ( App : ( Id : f ) ( Num : 5 ) ) ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p300 = newstr(17)
++5697: copystrcontent(ConstPtr(ptr7), p300, 0, 0, 16)
++5742: strsetitem(p300, 16, 120)
++5754: i309 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p285, ConstPtr(ptr307), 15360046201, descr=<Calli 8 rri EF=4>)
++5811: guard_no_exception(, descr=<Guard145>) [i309, p285, p300, p224]
++5831: i311 = int_and(i309, -9223372036854775808)
++5847: i312 = int_is_true(i311)
+guard_false(i312, descr=<Guard146>) [i309, p285, p300, p224]
++5857: p313 = getfield_gc(p285, descr=<FieldP dicttable.entries 24>)
++5868: p314 = getinteriorfield_gc(p313, i309, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++5877: guard_nonnull_class(p314, 4297287672, descr=<Guard147>) [p314, p285, None, p224]
++5895: i316 = getfield_gc(p314, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++5899: i317 = int_is_zero(i316)
+guard_false(i317, descr=<Guard148>) [p314, p285, None, p224]
+debug_merge_point(0, 0, '( App : ( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) ) ( App : ( Id : f ) ( Num : 5 ) ) )')
+debug_merge_point(0, 0, '( App : ( Id : f ) ( Num : 5 ) )')
++5909: label(p285, p224, p314, p313, descr=TargetToken(4302267840))
+debug_merge_point(0, 0, '( App : ( Id : f ) ( Num : 5 ) )')
+debug_merge_point(0, 0, '( Num : 5 )')
+debug_merge_point(0, 0, '( Id : f )')
+p319 = newstr(17)
++6014: copystrcontent(ConstPtr(ptr7), p319, 0, 0, 16)
++6059: strsetitem(p319, 16, 102)
++6071: i321 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p285, ConstPtr(ptr14), 13056039271, descr=<Calli 8 rri EF=4>)
++6128: guard_no_exception(, descr=<Guard149>) [i321, p285, p319, p224]
++6148: i322 = int_and(i321, -9223372036854775808)
++6164: i323 = int_is_true(i322)
+guard_false(i323, descr=<Guard150>) [i321, p285, p319, p224]
++6174: p324 = getinteriorfield_gc(p313, i321, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++6190: guard_nonnull_class(p324, 4297287832, descr=<Guard151>) [p324, p285, None, p224]
++6208: p325 = getfield_gc(p324, descr=<FieldP interpretIterNone.ReturnType.inst_arg 8>)
++6212: p326 = getfield_gc(p324, descr=<FieldP interpretIterNone.ReturnType.inst_env 24>)
++6216: p327 = getfield_gc_pure(p325, descr=<FieldP parser.Id.inst_name 8>)
++6220: p328 = getfield_gc(p326, descr=<FieldP interpretIterNone.Map.inst_values 8>)
+p329 = new(, descr=<SizeDescr 32>)
+p330 = new_array(8, descr=<ArrayX 16>)
++6339: setfield_gc(p329, p330, descr=<FieldP dicttable.entries 24>)
++6343: setfield_gc(p329, 16, descr=<FieldS dicttable.resize_counter 16>)
++6351: call(ConstClass(ll_update__dicttablePtr_dicttablePtr), p329, p328, descr=<Callv 0 rr EF=4>)
++6388: guard_no_exception(, descr=<Guard152>) [p324, p327, p329, p224, p285]
++6408: i331 = call(ConstClass(ll_strhash__rpy_stringPtr), p327, descr=<Calli 8 r EF=0>)
++6439: i332 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p329, p327, i331, descr=<Calli 8 rri EF=4>)
++6487: guard_no_exception(, descr=<Guard153>) [p324, i331, i332, p327, p329, None, p224, p285]
+p333 = new_with_vtable(4297287672)
++6590: call(ConstClass(_ll_dict_setitem_lookup_done_trampoline__v23___simple_call__function__l), p329, p327, p333, i331, i332, descr=<Callv 0 rrrii EF=4>)
++6652: setfield_gc(p333, 5, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++6667: guard_no_exception(, descr=<Guard154>) [p324, p329, p224, p333, p285]
++6687: p334 = getfield_gc(p324, descr=<FieldP interpretIterNone.ReturnType.inst_body 16>)
++6698: guard_value(p334, ConstPtr(ptr42), descr=<Guard155>) [p324, p334, p329, p224, None, p285]
+debug_merge_point(0, 0, '( Op : ( Op : ( Id : x ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) ) + ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) ) + ( Op : ( Num : 0 ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p336 = newstr(17)
++6801: copystrcontent(ConstPtr(ptr7), p336, 0, 0, 16)
++6846: strsetitem(p336, 16, 120)
++6858: i338 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p329, ConstPtr(ptr51), 15360046201, descr=<Calli 8 rri EF=4>)
++6915: guard_no_exception(, descr=<Guard156>) [i338, p329, p336, p224, p285]
++6935: i339 = int_and(i338, -9223372036854775808)
++6951: i340 = int_is_true(i339)
+guard_false(i340, descr=<Guard157>) [i338, p329, p336, p224, p285]
++6961: p341 = getfield_gc(p329, descr=<FieldP dicttable.entries 24>)
++6972: p342 = getinteriorfield_gc(p341, i338, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++6981: guard_nonnull_class(p342, 4297287672, descr=<Guard158>) [p342, p329, None, p224, p285]
+debug_merge_point(0, 0, '( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) ) )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p344 = newstr(17)
++7090: copystrcontent(ConstPtr(ptr7), p344, 0, 0, 16)
++7145: strsetitem(p344, 16, 120)
++7157: i346 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p329, ConstPtr(ptr68), 15360046201, descr=<Calli 8 rri EF=4>)
++7214: guard_no_exception(, descr=<Guard159>) [i346, p329, p224, p285, p342, p344]
++7234: i347 = int_and(i346, -9223372036854775808)
++7250: i348 = int_is_true(i347)
+guard_false(i348, descr=<Guard160>) [i346, p329, p224, p285, p342, p344]
++7260: p349 = getinteriorfield_gc(p341, i346, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++7276: guard_nonnull_class(p349, 4297287672, descr=<Guard161>) [p349, p329, p224, p285, p342, None]
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p351 = newstr(17)
++7385: copystrcontent(ConstPtr(ptr7), p351, 0, 0, 16)
++7433: strsetitem(p351, 16, 120)
++7445: i353 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p329, ConstPtr(ptr84), 15360046201, descr=<Calli 8 rri EF=4>)
++7502: guard_no_exception(, descr=<Guard162>) [i353, p329, p349, p285, p351, p342, p224]
++7522: i354 = int_and(i353, -9223372036854775808)
++7538: i355 = int_is_true(i354)
+guard_false(i355, descr=<Guard163>) [i353, p329, p349, p285, p351, p342, p224]
++7548: p356 = getinteriorfield_gc(p341, i353, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++7564: guard_nonnull_class(p356, 4297287672, descr=<Guard164>) [p356, p329, p349, p285, None, p342, p224]
+debug_merge_point(0, 0, '( Id : x )')
+p358 = newstr(17)
++7673: copystrcontent(ConstPtr(ptr7), p358, 0, 0, 16)
++7721: strsetitem(p358, 16, 120)
++7733: i360 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p329, ConstPtr(ptr100), 15360046201, descr=<Calli 8 rri EF=4>)
++7790: guard_no_exception(, descr=<Guard165>) [i360, p329, p349, p224, p356, p285, p358, p342]
++7810: i361 = int_and(i360, -9223372036854775808)
++7826: i362 = int_is_true(i361)
+guard_false(i362, descr=<Guard166>) [i360, p329, p349, p224, p356, p285, p358, p342]
++7836: p363 = getinteriorfield_gc(p341, i360, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++7852: guard_nonnull_class(p363, 4297287672, descr=<Guard167>) [p363, p329, p349, p224, p356, p285, None, p342]
++7870: i364 = getfield_gc(p356, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++7881: i365 = getfield_gc(p363, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++7885: i366 = int_add(i364, i365)
++7888: i367 = getfield_gc(p349, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++7899: i368 = int_add(i367, i366)
++7902: i369 = getfield_gc(p342, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++7913: i370 = int_add(i369, i368)
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) ) + ( Op : ( Num : 0 ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p372 = newstr(17)
++8007: copystrcontent(ConstPtr(ptr7), p372, 0, 0, 16)
++8055: strsetitem(p372, 16, 120)
++8067: i374 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p329, ConstPtr(ptr123), 15360046201, descr=<Calli 8 rri EF=4>)
++8124: guard_no_exception(, descr=<Guard168>) [i374, p329, i370, p224, p285, p372]
++8144: i375 = int_and(i374, -9223372036854775808)
++8160: i376 = int_is_true(i375)
+guard_false(i376, descr=<Guard169>) [i374, p329, i370, p224, p285, p372]
++8170: p377 = getinteriorfield_gc(p341, i374, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++8186: guard_nonnull_class(p377, 4297287672, descr=<Guard170>) [p377, p329, i370, p224, p285, None]
+debug_merge_point(0, 0, '( Id : x )')
+p379 = newstr(17)
++8295: copystrcontent(ConstPtr(ptr7), p379, 0, 0, 16)
++8343: strsetitem(p379, 16, 120)
++8355: i381 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p329, ConstPtr(ptr139), 15360046201, descr=<Calli 8 rri EF=4>)
++8412: guard_no_exception(, descr=<Guard171>) [i381, p329, i370, p377, p379, p224, p285]
++8432: i382 = int_and(i381, -9223372036854775808)
++8448: i383 = int_is_true(i382)
+guard_false(i383, descr=<Guard172>) [i381, p329, i370, p377, p379, p224, p285]
++8458: p384 = getinteriorfield_gc(p341, i381, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++8474: guard_nonnull_class(p384, 4297287672, descr=<Guard173>) [p384, p329, i370, p377, None, p224, p285]
++8492: i385 = getfield_gc(p377, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++8503: i386 = getfield_gc(p384, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++8507: i387 = int_add(i385, i386)
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p389 = newstr(17)
++8601: copystrcontent(ConstPtr(ptr7), p389, 0, 0, 16)
++8649: strsetitem(p389, 16, 120)
++8661: i391 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p329, ConstPtr(ptr158), 15360046201, descr=<Calli 8 rri EF=4>)
++8718: guard_no_exception(, descr=<Guard174>) [i391, p329, i370, p224, p389, i387, p285]
++8738: i392 = int_and(i391, -9223372036854775808)
++8754: i393 = int_is_true(i392)
+guard_false(i393, descr=<Guard175>) [i391, p329, i370, p224, p389, i387, p285]
++8764: p394 = getinteriorfield_gc(p341, i391, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++8780: guard_nonnull_class(p394, 4297287672, descr=<Guard176>) [p394, p329, i370, p224, None, i387, p285]
+debug_merge_point(0, 0, '( Id : x )')
+p396 = newstr(17)
++8889: copystrcontent(ConstPtr(ptr7), p396, 0, 0, 16)
++8937: strsetitem(p396, 16, 120)
++8949: i398 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p329, ConstPtr(ptr174), 15360046201, descr=<Calli 8 rri EF=4>)
++9006: guard_no_exception(, descr=<Guard177>) [i398, p329, i370, p394, p224, i387, p285, p396]
++9026: i399 = int_and(i398, -9223372036854775808)
++9042: i400 = int_is_true(i399)
+guard_false(i400, descr=<Guard178>) [i398, p329, i370, p394, p224, i387, p285, p396]
++9052: p401 = getinteriorfield_gc(p341, i398, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++9068: guard_nonnull_class(p401, 4297287672, descr=<Guard179>) [p401, p329, i370, p394, p224, i387, p285, None]
++9086: i402 = getfield_gc(p394, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++9097: i403 = getfield_gc(p401, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++9101: i404 = int_add(i402, i403)
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
++9104: i405 = int_add(i387, i404)
+debug_merge_point(0, 0, '( Op : ( Num : 0 ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) ) )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p407 = newstr(17)
++9205: copystrcontent(ConstPtr(ptr7), p407, 0, 0, 16)
++9253: strsetitem(p407, 16, 120)
++9265: i409 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p329, ConstPtr(ptr194), 15360046201, descr=<Calli 8 rri EF=4>)
++9322: guard_no_exception(, descr=<Guard180>) [i409, p329, i370, p224, p407, p285, i405]
++9342: i410 = int_and(i409, -9223372036854775808)
++9358: i411 = int_is_true(i410)
+guard_false(i411, descr=<Guard181>) [i409, p329, i370, p224, p407, p285, i405]
++9368: p412 = getinteriorfield_gc(p341, i409, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++9384: guard_nonnull_class(p412, 4297287672, descr=<Guard182>) [p412, p329, i370, p224, None, p285, i405]
+debug_merge_point(0, 0, '( Id : x )')
+p414 = newstr(17)
++9486: copystrcontent(ConstPtr(ptr7), p414, 0, 0, 16)
++9538: strsetitem(p414, 16, 120)
++9550: i416 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p329, ConstPtr(ptr210), 15360046201, descr=<Calli 8 rri EF=4>)
++9607: guard_no_exception(, descr=<Guard183>) [i416, p329, i370, p412, p224, p414, p285, i405]
++9627: i417 = int_and(i416, -9223372036854775808)
++9643: i418 = int_is_true(i417)
+guard_false(i418, descr=<Guard184>) [i416, p329, i370, p412, p224, p414, p285, i405]
++9653: p419 = getinteriorfield_gc(p341, i416, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++9669: guard_nonnull_class(p419, 4297287672, descr=<Guard185>) [p419, p329, i370, p412, p224, None, p285, i405]
++9687: i420 = getfield_gc(p412, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++9698: i421 = getfield_gc(p419, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++9702: i422 = int_add(i420, i421)
++9705: i423 = int_add(i405, i422)
++9715: i424 = int_add(i370, i423)
+debug_merge_point(0, 0, '( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) )')
+p425 = new(, descr=<SizeDescr 32>)
+p426 = new_array(8, descr=<ArrayX 16>)
++9833: setfield_gc(p425, p426, descr=<FieldP dicttable.entries 24>)
++9837: setfield_gc(p425, 16, descr=<FieldS dicttable.resize_counter 16>)
++9845: call(ConstClass(ll_update__dicttablePtr_dicttablePtr), p425, p285, descr=<Callv 0 rr EF=4>)
++9886: guard_no_exception(, descr=<Guard186>) [i424, p224, p425, p285]
++9906: i427 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p425, ConstPtr(ptr234), 15488046584, descr=<Calli 8 rri EF=4>)
++9963: guard_no_exception(, descr=<Guard187>) [i427, p425, i424, p224, None, p285]
+p428 = new_with_vtable(4297287672)
++10066: call(ConstClass(_ll_dict_setitem_lookup_done_trampoline__v23___simple_call__function__l), p425, ConstPtr(ptr234), p428, 15488046584, i427, descr=<Callv 0 rrrii EF=4>)
++10140: setfield_gc(p428, i424, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++10158: guard_no_exception(, descr=<Guard188>) [p224, p425, p285, p428]
+debug_merge_point(0, 0, '( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) - ( Num : 1 ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p430 = newstr(17)
++10262: copystrcontent(ConstPtr(ptr7), p430, 0, 0, 16)
++10310: strsetitem(p430, 16, 120)
++10322: i432 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p425, ConstPtr(ptr249), 15360046201, descr=<Calli 8 rri EF=4>)
++10379: guard_no_exception(, descr=<Guard189>) [i432, p425, p430, p224]
++10399: i433 = int_and(i432, -9223372036854775808)
++10415: i434 = int_is_true(i433)
+guard_false(i434, descr=<Guard190>) [i432, p425, p430, p224]
++10425: p435 = getfield_gc(p425, descr=<FieldP dicttable.entries 24>)
++10436: p436 = getinteriorfield_gc(p435, i432, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++10445: guard_nonnull_class(p436, 4297287672, descr=<Guard191>) [p436, p425, None, p224]
+debug_merge_point(0, 0, '( Num : 1 )')
++10463: i437 = getfield_gc(p436, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++10467: i438 = int_sub(i437, 1)
+debug_merge_point(0, 0, '( Id : run )')
+p440 = newstr(19)
++10562: copystrcontent(ConstPtr(ptr7), p440, 0, 0, 16)
++10614: strsetitem(p440, 16, 114)
++10626: strsetitem(p440, 17, 117)
++10631: strsetitem(p440, 18, 110)
++10636: i446 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p425, ConstPtr(ptr273), 756880090362066628, descr=<Calli 8 rri EF=4>)
++10693: guard_no_exception(, descr=<Guard192>) [i446, p425, p224, i438, p440]
++10713: i447 = int_and(i446, -9223372036854775808)
++10729: i448 = int_is_true(i447)
+guard_false(i448, descr=<Guard193>) [i446, p425, p224, i438, p440]
++10739: p449 = getinteriorfield_gc(p435, i446, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++10755: guard_nonnull_class(p449, 4297287832, descr=<Guard194>) [p449, p425, p224, i438, None]
++10773: p450 = getfield_gc(p449, descr=<FieldP interpretIterNone.ReturnType.inst_arg 8>)
++10777: p451 = getfield_gc(p449, descr=<FieldP interpretIterNone.ReturnType.inst_env 24>)
++10781: p452 = getfield_gc_pure(p450, descr=<FieldP parser.Id.inst_name 8>)
++10785: p453 = getfield_gc(p451, descr=<FieldP interpretIterNone.Map.inst_values 8>)
+p454 = new(, descr=<SizeDescr 32>)
+p455 = new_array(8, descr=<ArrayX 16>)
++10904: setfield_gc(p454, p455, descr=<FieldP dicttable.entries 24>)
++10908: setfield_gc(p454, 16, descr=<FieldS dicttable.resize_counter 16>)
++10916: call(ConstClass(ll_update__dicttablePtr_dicttablePtr), p454, p453, descr=<Callv 0 rr EF=4>)
++10953: guard_no_exception(, descr=<Guard195>) [p449, p452, p224, i438, p454]
++10973: i456 = call(ConstClass(ll_strhash__rpy_stringPtr), p452, descr=<Calli 8 r EF=0>)
++11004: i457 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p454, p452, i456, descr=<Calli 8 rri EF=4>)
++11052: guard_no_exception(, descr=<Guard196>) [p449, i456, i457, p452, p454, p224, i438, None]
+p458 = new_with_vtable(4297287672)
++11155: call(ConstClass(_ll_dict_setitem_lookup_done_trampoline__v23___simple_call__function__l), p454, p452, p458, i456, i457, descr=<Callv 0 rrrii EF=4>)
++11217: setfield_gc(p458, i438, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++11235: guard_no_exception(, descr=<Guard197>) [p449, p454, p224, p458]
++11255: p459 = getfield_gc(p449, descr=<FieldP interpretIterNone.ReturnType.inst_body 16>)
++11266: guard_value(p459, ConstPtr(ptr298), descr=<Guard198>) [p449, p224, p459, p454, None, None]
+debug_merge_point(0, 0, '( If : ( Id : x ) == 0 then ( App : ( Id : f ) ( Num : 5 ) ) else ( App : ( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) ) ( App : ( Id : f ) ( Num : 5 ) ) ) )')
+debug_merge_point(0, 0, '( Id : x )')
+p461 = newstr(17)
++11369: copystrcontent(ConstPtr(ptr7), p461, 0, 0, 16)
++11414: strsetitem(p461, 16, 120)
++11426: i463 = call(ConstClass(ll_dict_lookup_trampoline__v28___simple_call__function_ll), p454, ConstPtr(ptr307), 15360046201, descr=<Calli 8 rri EF=4>)
++11483: guard_no_exception(, descr=<Guard199>) [i463, p454, p224, p461]
++11503: i464 = int_and(i463, -9223372036854775808)
++11519: i465 = int_is_true(i464)
+guard_false(i465, descr=<Guard200>) [i463, p454, p224, p461]
++11529: p466 = getfield_gc(p454, descr=<FieldP dicttable.entries 24>)
++11540: p467 = getinteriorfield_gc(p466, i463, descr=<InteriorFieldDescr <FieldP dictentry.value 8>>)
++11549: guard_nonnull_class(p467, 4297287672, descr=<Guard201>) [p467, p454, p224, None]
++11567: i468 = getfield_gc(p467, descr=<FieldS interpretIterNone.ReturnType.inst_val 32>)
++11571: i469 = int_is_zero(i468)
+guard_false(i469, descr=<Guard202>) [p467, p454, p224, None]
+debug_merge_point(0, 0, '( App : ( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) ) ( App : ( Id : f ) ( Num : 5 ) ) )')
+debug_merge_point(0, 0, '( App : ( Id : f ) ( Num : 5 ) )')
++11581: jump(p454, p224, p467, p466, descr=TargetToken(4302267840))
++11596: --end of the loop--
+[664ecb16868] jit-log-opt-loop}

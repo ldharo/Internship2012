@@ -1,0 +1,337 @@
+[664a07ea90c] {jit-log-opt-loop
+# Loop 0 (( App : ( Id : f ) ( Num : 5 ) )) : loop with 288 ops
+[p0, p1, p2]
++97: label(p0, p1, p2, descr=TargetToken(4302168496))
+debug_merge_point(0, 0, '( App : ( Id : f ) ( Num : 5 ) )')
++104: guard_nonnull_class(p1, 4297247048, descr=<Guard42>) [p2, p1, p0]
+debug_merge_point(0, 0, '( Num : 5 )')
+debug_merge_point(0, 0, '( Id : f )')
++122: p6 = call(ConstClass(Map.getvalue), p0, ConstPtr(ptr5), descr=<Callr 8 rr EF=3>)
++173: guard_no_exception(, descr=<Guard43>) [p6, p0, p1]
++193: guard_nonnull_class(p6, 4297247128, descr=<Guard44>) [p6, p0, p1]
++211: p8 = getfield_gc(p6, descr=<FieldP interpretIterNoPromote.ReturnType.inst_arg 8>)
++215: p9 = getfield_gc(p6, descr=<FieldP interpretIterNoPromote.ReturnType.inst_env 24>)
++219: guard_value(p9, ConstPtr(ptr10), descr=<Guard45>) [p9, p8, p6, p1]
++238: p11 = getfield_gc_pure(p8, descr=<FieldP parser.Id.inst_name 8>)
+p13 = new_with_vtable(4297246968)
++325: p15 = call(ConstClass(Map.add_attribute), ConstPtr(ptr10), p11, p13, descr=<Callr 8 rrr EF=3>)
++372: setfield_gc(p13, 5, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++387: guard_no_exception(, descr=<Guard46>) [p15, p6, p13, p1]
++407: p17 = getfield_gc(p6, descr=<FieldP interpretIterNoPromote.ReturnType.inst_body 16>)
++418: guard_value(p17, ConstPtr(ptr18), descr=<Guard47>) [p6, p1, p15, p17, None, None]
+debug_merge_point(0, 0, '( Op : ( Op : ( Id : x ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) ) + ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) ) + ( Op : ( Num : 0 ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) )')
+debug_merge_point(0, 0, '( Id : x )')
++437: p21 = call(ConstClass(Map.getvalue), p15, ConstPtr(ptr20), descr=<Callr 8 rr EF=3>)
++484: guard_no_exception(, descr=<Guard48>) [p21, p15, None, p1]
++504: guard_nonnull_class(p21, 4297246968, descr=<Guard49>) [p21, p15, None, p1]
+debug_merge_point(0, 0, '( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) ) )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) )')
+debug_merge_point(0, 0, '( Id : x )')
++522: p24 = call(ConstClass(Map.getvalue), p15, ConstPtr(ptr23), descr=<Callr 8 rr EF=3>)
++573: guard_no_exception(, descr=<Guard50>) [p24, p15, p21, None, p1]
++593: guard_nonnull_class(p24, 4297246968, descr=<Guard51>) [p24, p15, p21, None, p1]
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
++611: p27 = call(ConstClass(Map.getvalue), p15, ConstPtr(ptr26), descr=<Callr 8 rr EF=3>)
++662: guard_no_exception(, descr=<Guard52>) [p27, p15, p24, p21, None, p1]
++682: guard_nonnull_class(p27, 4297246968, descr=<Guard53>) [p27, p15, p24, p21, None, p1]
+debug_merge_point(0, 0, '( Id : x )')
++700: p30 = call(ConstClass(Map.getvalue), p15, ConstPtr(ptr29), descr=<Callr 8 rr EF=3>)
++751: guard_no_exception(, descr=<Guard54>) [p30, p15, p27, p24, p21, None, p1]
++771: guard_nonnull_class(p30, 4297246968, descr=<Guard55>) [p30, p15, p27, p24, p21, None, p1]
++789: i32 = getfield_gc(p27, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++800: i33 = getfield_gc(p30, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++804: i34 = int_add(i32, i33)
++807: i35 = getfield_gc(p24, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++818: i36 = int_add(i35, i34)
++821: i37 = getfield_gc(p21, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++832: i38 = int_add(i37, i36)
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) ) + ( Op : ( Num : 0 ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
++835: p40 = call(ConstClass(Map.getvalue), p15, ConstPtr(ptr39), descr=<Callr 8 rr EF=3>)
++886: guard_no_exception(, descr=<Guard56>) [p40, p15, i38, None, None, None, None, p1]
++906: guard_nonnull_class(p40, 4297246968, descr=<Guard57>) [p40, p15, i38, None, None, None, None, p1]
+debug_merge_point(0, 0, '( Id : x )')
++924: p43 = call(ConstClass(Map.getvalue), p15, ConstPtr(ptr42), descr=<Callr 8 rr EF=3>)
++975: guard_no_exception(, descr=<Guard58>) [p43, p15, p40, i38, None, None, None, None, p1]
++995: guard_nonnull_class(p43, 4297246968, descr=<Guard59>) [p43, p15, p40, i38, None, None, None, None, p1]
++1013: i45 = getfield_gc(p40, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++1024: i46 = getfield_gc(p43, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++1028: i47 = int_add(i45, i46)
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
++1031: p49 = call(ConstClass(Map.getvalue), p15, ConstPtr(ptr48), descr=<Callr 8 rr EF=3>)
++1082: guard_no_exception(, descr=<Guard60>) [p49, p15, i47, None, i38, None, None, None, None, p1]
++1102: guard_nonnull_class(p49, 4297246968, descr=<Guard61>) [p49, p15, i47, None, i38, None, None, None, None, p1]
+debug_merge_point(0, 0, '( Id : x )')
++1120: p52 = call(ConstClass(Map.getvalue), p15, ConstPtr(ptr51), descr=<Callr 8 rr EF=3>)
++1171: guard_no_exception(, descr=<Guard62>) [p52, p15, p49, i47, None, i38, None, None, None, None, p1]
++1191: guard_nonnull_class(p52, 4297246968, descr=<Guard63>) [p52, p15, p49, i47, None, i38, None, None, None, None, p1]
++1209: i54 = getfield_gc(p49, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++1220: i55 = getfield_gc(p52, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++1224: i56 = int_add(i54, i55)
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
++1227: i57 = int_add(i47, i56)
+debug_merge_point(0, 0, '( Op : ( Num : 0 ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) ) )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
++1237: p59 = call(ConstClass(Map.getvalue), p15, ConstPtr(ptr58), descr=<Callr 8 rr EF=3>)
++1288: guard_no_exception(, descr=<Guard64>) [p59, p15, i57, None, None, None, i38, None, None, None, None, p1]
++1308: guard_nonnull_class(p59, 4297246968, descr=<Guard65>) [p59, p15, i57, None, None, None, i38, None, None, None, None, p1]
+debug_merge_point(0, 0, '( Id : x )')
++1326: p62 = call(ConstClass(Map.getvalue), p15, ConstPtr(ptr61), descr=<Callr 8 rr EF=3>)
++1377: guard_no_exception(, descr=<Guard66>) [p62, p15, p59, i57, None, None, None, i38, None, None, None, None, p1]
++1397: guard_nonnull_class(p62, 4297246968, descr=<Guard67>) [p62, p15, p59, i57, None, None, None, i38, None, None, None, None, p1]
++1415: i64 = getfield_gc(p59, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++1426: i65 = getfield_gc(p62, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++1430: i66 = int_add(i64, i65)
++1433: i67 = int_add(i57, i66)
++1443: i68 = int_add(i38, i67)
++1453: p69 = getfield_gc(p1, descr=<FieldP interpretIterNoPromote.App1K.inst_fun 16>)
++1464: p70 = getfield_gc(p1, descr=<FieldP interpretIterNoPromote.App1K.inst_k 24>)
++1468: p71 = getfield_gc(p1, descr=<FieldP interpretIterNoPromote.App1K.inst_env 8>)
++1472: guard_value(p69, ConstPtr(ptr72), descr=<Guard68>) [p71, p69, i68, p70, None, None, None, None, None, None, None, None, None, None, None]
+debug_merge_point(0, 0, '( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) )')
++1491: guard_value(p71, ConstPtr(ptr73), descr=<Guard69>) [p71, i68, p70, None, None, None, None, None, None, None, None, None, None, None]
+p75 = new_with_vtable(4297246968)
++1593: p78 = call(ConstClass(Map.add_attribute), ConstPtr(ptr73), ConstPtr(ptr77), p75, descr=<Callr 8 rrr EF=3>)
++1660: setfield_gc(p75, i68, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++1678: guard_no_exception(, descr=<Guard70>) [p78, p75, p70]
+debug_merge_point(0, 0, '( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) )')
++1698: guard_nonnull_class(p70, 4297251024, descr=<Guard71>) [p70, p78, None, None]
+debug_merge_point(0, 0, '( Op : ( Id : x ) - ( Num : 1 ) )')
+debug_merge_point(0, 0, '( Id : x )')
++1723: p81 = call(ConstClass(Map.getvalue), p78, ConstPtr(ptr80), descr=<Callr 8 rr EF=3>)
++1770: guard_no_exception(, descr=<Guard72>) [p81, p78, None, p70]
++1790: guard_nonnull_class(p81, 4297246968, descr=<Guard73>) [p81, p78, None, p70]
+debug_merge_point(0, 0, '( Num : 1 )')
++1808: i83 = getfield_gc(p81, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++1812: i85 = int_sub(i83, 1)
+debug_merge_point(0, 0, '( Id : run )')
++1816: p87 = call(ConstClass(Map.getvalue), p78, ConstPtr(ptr86), descr=<Callr 8 rr EF=3>)
++1867: guard_no_exception(, descr=<Guard74>) [p87, p78, i85, None, p70]
++1887: guard_nonnull_class(p87, 4297247128, descr=<Guard75>) [p87, p78, i85, None, p70]
++1905: p89 = getfield_gc(p87, descr=<FieldP interpretIterNoPromote.ReturnType.inst_arg 8>)
++1909: p90 = getfield_gc(p87, descr=<FieldP interpretIterNoPromote.ReturnType.inst_env 24>)
++1913: guard_value(p90, ConstPtr(ptr91), descr=<Guard76>) [p90, p89, p87, i85, None, p70]
++1932: p92 = getfield_gc_pure(p89, descr=<FieldP parser.Id.inst_name 8>)
+p94 = new_with_vtable(4297246968)
++2019: p96 = call(ConstClass(Map.add_attribute), ConstPtr(ptr91), p92, p94, descr=<Callr 8 rrr EF=3>)
++2069: setfield_gc(p94, i85, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++2087: guard_no_exception(, descr=<Guard77>) [p96, p87, p70, p94]
++2107: p97 = getfield_gc(p87, descr=<FieldP interpretIterNoPromote.ReturnType.inst_body 16>)
++2118: guard_value(p97, ConstPtr(ptr98), descr=<Guard78>) [p87, p70, p96, p97, None, None]
+debug_merge_point(0, 0, '( If : ( Id : x ) == 0 then ( App : ( Id : f ) ( Num : 5 ) ) else ( App : ( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) ) ( App : ( Id : f ) ( Num : 5 ) ) ) )')
+debug_merge_point(0, 0, '( Id : x )')
++2137: p100 = call(ConstClass(Map.getvalue), p96, ConstPtr(ptr99), descr=<Callr 8 rr EF=3>)
++2184: guard_no_exception(, descr=<Guard79>) [p100, p96, p70, None]
++2204: guard_nonnull_class(p100, 4297246968, descr=<Guard80>) [p100, p96, p70, None]
++2222: i102 = getfield_gc(p100, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++2226: i103 = int_is_zero(i102)
+guard_false(i103, descr=<Guard81>) [p100, p96, p70, None]
+debug_merge_point(0, 0, '( App : ( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) ) ( App : ( Id : f ) ( Num : 5 ) ) )')
+debug_merge_point(0, 0, '( App : ( Id : f ) ( Num : 5 ) )')
++2236: p104 = same_as(p100)
++2236: label(p96, p70, p100, descr=TargetToken(4302168576))
+debug_merge_point(0, 0, '( App : ( Id : f ) ( Num : 5 ) )')
+debug_merge_point(0, 0, '( Num : 5 )')
+debug_merge_point(0, 0, '( Id : f )')
++2243: p105 = call(ConstClass(Map.getvalue), p96, ConstPtr(ptr5), descr=<Callr 8 rr EF=3>)
++2287: guard_no_exception(, descr=<Guard82>) [p105, p96, p70]
++2307: guard_nonnull_class(p105, 4297247128, descr=<Guard83>) [p105, p96, p70]
++2325: p106 = getfield_gc(p105, descr=<FieldP interpretIterNoPromote.ReturnType.inst_arg 8>)
++2329: p107 = getfield_gc(p105, descr=<FieldP interpretIterNoPromote.ReturnType.inst_env 24>)
++2333: guard_value(p107, ConstPtr(ptr10), descr=<Guard84>) [p107, p106, p105, p96, p70]
++2352: p108 = getfield_gc_pure(p106, descr=<FieldP parser.Id.inst_name 8>)
+p109 = new_with_vtable(4297246968)
++2446: p110 = call(ConstClass(Map.add_attribute), ConstPtr(ptr10), p108, p109, descr=<Callr 8 rrr EF=3>)
++2500: setfield_gc(p109, 5, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++2515: guard_no_exception(, descr=<Guard85>) [p110, p105, p96, p70, p109]
++2535: p111 = getfield_gc(p105, descr=<FieldP interpretIterNoPromote.ReturnType.inst_body 16>)
++2546: guard_value(p111, ConstPtr(ptr18), descr=<Guard86>) [p105, p110, p111, p96, p70, None]
+debug_merge_point(0, 0, '( Op : ( Op : ( Id : x ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) ) + ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) ) + ( Op : ( Num : 0 ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) )')
+debug_merge_point(0, 0, '( Id : x )')
++2565: p112 = call(ConstClass(Map.getvalue), p110, ConstPtr(ptr20), descr=<Callr 8 rr EF=3>)
++2612: guard_no_exception(, descr=<Guard87>) [p112, p110, p96, p70, None]
++2632: guard_nonnull_class(p112, 4297246968, descr=<Guard88>) [p112, p110, p96, p70, None]
+debug_merge_point(0, 0, '( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) ) )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Op : ( Id : x ) + ( Id : x ) ) )')
+debug_merge_point(0, 0, '( Id : x )')
++2650: p113 = call(ConstClass(Map.getvalue), p110, ConstPtr(ptr23), descr=<Callr 8 rr EF=3>)
++2701: guard_no_exception(, descr=<Guard89>) [p113, p110, p112, p96, p70, None]
++2721: guard_nonnull_class(p113, 4297246968, descr=<Guard90>) [p113, p110, p112, p96, p70, None]
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
++2739: p114 = call(ConstClass(Map.getvalue), p110, ConstPtr(ptr26), descr=<Callr 8 rr EF=3>)
++2790: guard_no_exception(, descr=<Guard91>) [p114, p110, p113, p112, p96, p70, None]
++2810: guard_nonnull_class(p114, 4297246968, descr=<Guard92>) [p114, p110, p113, p112, p96, p70, None]
+debug_merge_point(0, 0, '( Id : x )')
++2828: p115 = call(ConstClass(Map.getvalue), p110, ConstPtr(ptr29), descr=<Callr 8 rr EF=3>)
++2879: guard_no_exception(, descr=<Guard93>) [p115, p110, p114, p113, p112, p96, p70, None]
++2899: guard_nonnull_class(p115, 4297246968, descr=<Guard94>) [p115, p110, p114, p113, p112, p96, p70, None]
++2917: i116 = getfield_gc(p114, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++2928: i117 = getfield_gc(p115, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++2932: i118 = int_add(i116, i117)
++2935: i119 = getfield_gc(p113, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++2946: i120 = int_add(i119, i118)
++2949: i121 = getfield_gc(p112, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++2960: i122 = int_add(i121, i120)
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) ) + ( Op : ( Num : 0 ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) ) ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
++2963: p123 = call(ConstClass(Map.getvalue), p110, ConstPtr(ptr39), descr=<Callr 8 rr EF=3>)
++3014: guard_no_exception(, descr=<Guard95>) [p123, p110, i122, None, None, None, p96, p70, None]
++3034: guard_nonnull_class(p123, 4297246968, descr=<Guard96>) [p123, p110, i122, None, None, None, p96, p70, None]
+debug_merge_point(0, 0, '( Id : x )')
++3052: p124 = call(ConstClass(Map.getvalue), p110, ConstPtr(ptr42), descr=<Callr 8 rr EF=3>)
++3103: guard_no_exception(, descr=<Guard97>) [p124, p110, p123, i122, None, None, None, p96, p70, None]
++3123: guard_nonnull_class(p124, 4297246968, descr=<Guard98>) [p124, p110, p123, i122, None, None, None, p96, p70, None]
++3141: i125 = getfield_gc(p123, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++3152: i126 = getfield_gc(p124, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++3156: i127 = int_add(i125, i126)
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Op : ( Id : x ) + ( Id : x ) ) + ( Num : 0 ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
++3159: p128 = call(ConstClass(Map.getvalue), p110, ConstPtr(ptr48), descr=<Callr 8 rr EF=3>)
++3210: guard_no_exception(, descr=<Guard99>) [p128, p110, i127, None, i122, None, None, None, p96, p70, None]
++3230: guard_nonnull_class(p128, 4297246968, descr=<Guard100>) [p128, p110, i127, None, i122, None, None, None, p96, p70, None]
+debug_merge_point(0, 0, '( Id : x )')
++3248: p129 = call(ConstClass(Map.getvalue), p110, ConstPtr(ptr51), descr=<Callr 8 rr EF=3>)
++3299: guard_no_exception(, descr=<Guard101>) [p129, p110, p128, i127, None, i122, None, None, None, p96, p70, None]
++3319: guard_nonnull_class(p129, 4297246968, descr=<Guard102>) [p129, p110, p128, i127, None, i122, None, None, None, p96, p70, None]
++3337: i130 = getfield_gc(p128, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++3348: i131 = getfield_gc(p129, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++3352: i132 = int_add(i130, i131)
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Num : 0 )')
++3355: i133 = int_add(i127, i132)
+debug_merge_point(0, 0, '( Op : ( Num : 0 ) + ( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) ) )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Op : ( Num : 0 ) + ( Op : ( Id : x ) + ( Id : x ) ) )')
+debug_merge_point(0, 0, '( Num : 0 )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) + ( Id : x ) )')
+debug_merge_point(0, 0, '( Id : x )')
++3365: p134 = call(ConstClass(Map.getvalue), p110, ConstPtr(ptr58), descr=<Callr 8 rr EF=3>)
++3416: guard_no_exception(, descr=<Guard103>) [p134, p110, i133, None, None, None, i122, None, None, None, p96, p70, None]
++3436: guard_nonnull_class(p134, 4297246968, descr=<Guard104>) [p134, p110, i133, None, None, None, i122, None, None, None, p96, p70, None]
+debug_merge_point(0, 0, '( Id : x )')
++3454: p135 = call(ConstClass(Map.getvalue), p110, ConstPtr(ptr61), descr=<Callr 8 rr EF=3>)
++3505: guard_no_exception(, descr=<Guard105>) [p135, p110, p134, i133, None, None, None, i122, None, None, None, p96, p70, None]
++3525: guard_nonnull_class(p135, 4297246968, descr=<Guard106>) [p135, p110, p134, i133, None, None, None, i122, None, None, None, p96, p70, None]
++3543: i136 = getfield_gc(p134, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++3554: i137 = getfield_gc(p135, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++3558: i138 = int_add(i136, i137)
++3561: i139 = int_add(i133, i138)
++3571: i140 = int_add(i122, i139)
+debug_merge_point(0, 0, '( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) )')
++3581: guard_value(p96, ConstPtr(ptr73), descr=<Guard107>) [p96, i140, None, None, None, None, None, None, None, None, None, None, p70, None]
+p141 = new_with_vtable(4297246968)
++3683: p142 = call(ConstClass(Map.add_attribute), ConstPtr(ptr73), ConstPtr(ptr77), p141, descr=<Callr 8 rrr EF=3>)
++3750: setfield_gc(p141, i140, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++3768: guard_no_exception(, descr=<Guard108>) [p142, p70, p141]
+debug_merge_point(0, 0, '( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) )')
+debug_merge_point(0, 0, '( Op : ( Id : x ) - ( Num : 1 ) )')
+debug_merge_point(0, 0, '( Id : x )')
++3788: p143 = call(ConstClass(Map.getvalue), p142, ConstPtr(ptr80), descr=<Callr 8 rr EF=3>)
++3835: guard_no_exception(, descr=<Guard109>) [p143, p142, p70, None]
++3855: guard_nonnull_class(p143, 4297246968, descr=<Guard110>) [p143, p142, p70, None]
+debug_merge_point(0, 0, '( Num : 1 )')
++3873: i144 = getfield_gc(p143, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++3877: i145 = int_sub(i144, 1)
+debug_merge_point(0, 0, '( Id : run )')
++3881: p146 = call(ConstClass(Map.getvalue), p142, ConstPtr(ptr86), descr=<Callr 8 rr EF=3>)
++3932: guard_no_exception(, descr=<Guard111>) [p146, p142, i145, p70, None]
++3952: guard_nonnull_class(p146, 4297247128, descr=<Guard112>) [p146, p142, i145, p70, None]
++3970: p147 = getfield_gc(p146, descr=<FieldP interpretIterNoPromote.ReturnType.inst_arg 8>)
++3974: p148 = getfield_gc(p146, descr=<FieldP interpretIterNoPromote.ReturnType.inst_env 24>)
++3978: guard_value(p148, ConstPtr(ptr91), descr=<Guard113>) [p148, p147, p146, i145, p70, None]
++3997: p149 = getfield_gc_pure(p147, descr=<FieldP parser.Id.inst_name 8>)
+p150 = new_with_vtable(4297246968)
++4084: p151 = call(ConstClass(Map.add_attribute), ConstPtr(ptr91), p149, p150, descr=<Callr 8 rrr EF=3>)
++4134: setfield_gc(p150, i145, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++4152: guard_no_exception(, descr=<Guard114>) [p151, p146, p70, p150]
++4172: p152 = getfield_gc(p146, descr=<FieldP interpretIterNoPromote.ReturnType.inst_body 16>)
++4183: guard_value(p152, ConstPtr(ptr98), descr=<Guard115>) [p146, p70, p151, p152, None, None]
+debug_merge_point(0, 0, '( If : ( Id : x ) == 0 then ( App : ( Id : f ) ( Num : 5 ) ) else ( App : ( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) ) ( App : ( Id : f ) ( Num : 5 ) ) ) )')
+debug_merge_point(0, 0, '( Id : x )')
++4202: p153 = call(ConstClass(Map.getvalue), p151, ConstPtr(ptr99), descr=<Callr 8 rr EF=3>)
++4249: guard_no_exception(, descr=<Guard116>) [p153, p151, p70, None]
++4269: guard_nonnull_class(p153, 4297246968, descr=<Guard117>) [p153, p151, p70, None]
++4287: i154 = getfield_gc(p153, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++4291: i155 = int_is_zero(i154)
+guard_false(i155, descr=<Guard118>) [p153, p151, p70, None]
+debug_merge_point(0, 0, '( App : ( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) ) ( App : ( Id : f ) ( Num : 5 ) ) )')
+debug_merge_point(0, 0, '( App : ( Id : f ) ( Num : 5 ) )')
++4301: jump(p151, p70, p153, descr=TargetToken(4302168576))
++4313: --end of the loop--
+[664a61e7546] jit-log-opt-loop}
+[664a66386a8] {jit-log-opt-loop
+# Loop 1 (( Op : ( Id : x ) - ( Num : 1 ) )) : entry bridge with 39 ops
+[p0, p1, p2]
+debug_merge_point(0, 0, '( Op : ( Id : x ) - ( Num : 1 ) )')
++97: guard_nonnull_class(p1, 4297247048, descr=<Guard124>) [p2, p1, p0]
+debug_merge_point(0, 0, '( Id : x )')
++115: p6 = call(ConstClass(Map.getvalue), p0, ConstPtr(ptr5), descr=<Callr 8 rr EF=3>)
++166: guard_no_exception(, descr=<Guard125>) [p6, p0, p1]
++186: guard_nonnull_class(p6, 4297246968, descr=<Guard126>) [p6, p0, p1]
+debug_merge_point(0, 0, '( Num : 1 )')
++204: i8 = getfield_gc(p6, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++208: i10 = int_sub(i8, 1)
++212: p11 = getfield_gc(p1, descr=<FieldP interpretIterNoPromote.App1K.inst_fun 16>)
++223: p12 = getfield_gc(p1, descr=<FieldP interpretIterNoPromote.App1K.inst_k 24>)
++227: p13 = getfield_gc(p1, descr=<FieldP interpretIterNoPromote.App1K.inst_env 8>)
++231: guard_value(p11, ConstPtr(ptr14), descr=<Guard127>) [p13, p11, i10, p12, None]
+debug_merge_point(0, 0, '( Id : run )')
++250: p17 = call(ConstClass(Map.getvalue), p13, ConstPtr(ptr16), descr=<Callr 8 rr EF=3>)
++311: guard_no_exception(, descr=<Guard128>) [p17, p13, i10, p12, None]
++331: guard_nonnull_class(p17, 4297247128, descr=<Guard129>) [p17, p13, i10, p12, None]
++349: p19 = getfield_gc(p17, descr=<FieldP interpretIterNoPromote.ReturnType.inst_arg 8>)
++353: p20 = getfield_gc(p17, descr=<FieldP interpretIterNoPromote.ReturnType.inst_env 24>)
++357: guard_value(p20, ConstPtr(ptr21), descr=<Guard130>) [p20, p19, p17, i10, p12, None]
++376: p22 = getfield_gc_pure(p19, descr=<FieldP parser.Id.inst_name 8>)
+p24 = new_with_vtable(4297246968)
++470: p26 = call(ConstClass(Map.add_attribute), ConstPtr(ptr21), p22, p24, descr=<Callr 8 rrr EF=3>)
++524: setfield_gc(p24, i10, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++542: guard_no_exception(, descr=<Guard131>) [p26, p17, p24, p12]
++562: p27 = getfield_gc(p17, descr=<FieldP interpretIterNoPromote.ReturnType.inst_body 16>)
++573: guard_value(p27, ConstPtr(ptr28), descr=<Guard132>) [p17, p12, p26, p27, None, None]
+debug_merge_point(0, 0, '( If : ( Id : x ) == 0 then ( App : ( Id : f ) ( Num : 5 ) ) else ( App : ( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) ) ( App : ( Id : f ) ( Num : 5 ) ) ) )')
++592: guard_nonnull_class(p12, 4297251024, descr=<Guard133>) [p17, p12, p26, None, None]
+debug_merge_point(0, 0, '( Id : x )')
++617: p31 = call(ConstClass(Map.getvalue), p26, ConstPtr(ptr30), descr=<Callr 8 rr EF=3>)
++664: guard_no_exception(, descr=<Guard134>) [p31, p26, None, p12]
++684: guard_nonnull_class(p31, 4297246968, descr=<Guard135>) [p31, p26, None, p12]
++702: i33 = getfield_gc(p31, descr=<FieldS interpretIterNoPromote.ReturnType.inst_val 32>)
++706: i34 = int_is_zero(i33)
+guard_false(i34, descr=<Guard136>) [p31, p26, None, p12]
+debug_merge_point(0, 0, '( App : ( Fun : (( Id : y )) ( App : ( Id : run ) ( Op : ( Id : x ) - ( Num : 1 ) ) ) ) ( App : ( Id : f ) ( Num : 5 ) ) )')
+debug_merge_point(0, 0, '( App : ( Id : f ) ( Num : 5 ) )')
++716: jump(p26, p12, p31, descr=TargetToken(4302168576))
++736: --end of the loop--
+[664a73806f4] jit-log-opt-loop}

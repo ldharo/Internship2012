@@ -1,0 +1,418 @@
+Tests of RPInterpretTramp-c
+
+Tests of RPInterpretTramp-c
+
+Testing testCBT10runs1000
+
+run 0
+0.23user 0.01system 0:00.24elapsed 99%CPU (0avgtext+0avgdata 21632maxresident)k
+0inputs+0outputs (0major+1450minor)pagefaults 0swaps
+
+run 1
+0.23user 0.01system 0:00.24elapsed 100%CPU (0avgtext+0avgdata 21648maxresident)k
+0inputs+0outputs (0major+1450minor)pagefaults 0swaps
+
+run 2
+0.24user 0.00system 0:00.24elapsed 100%CPU (0avgtext+0avgdata 21632maxresident)k
+0inputs+0outputs (0major+1449minor)pagefaults 0swaps
+
+run 3
+0.23user 0.00system 0:00.24elapsed 100%CPU (0avgtext+0avgdata 21648maxresident)k
+0inputs+0outputs (0major+1451minor)pagefaults 0swaps
+
+run 4
+0.23user 0.01system 0:00.24elapsed 100%CPU (0avgtext+0avgdata 21648maxresident)k
+0inputs+0outputs (0major+1450minor)pagefaults 0swaps
+
+run 5
+0.23user 0.01system 0:00.24elapsed 100%CPU (0avgtext+0avgdata 21648maxresident)k
+0inputs+0outputs (0major+1450minor)pagefaults 0swaps
+
+run 6
+0.22user 0.02system 0:00.24elapsed 99%CPU (0avgtext+0avgdata 21632maxresident)k
+0inputs+0outputs (0major+1449minor)pagefaults 0swaps
+
+run 7
+0.23user 0.00system 0:00.24elapsed 99%CPU (0avgtext+0avgdata 21632maxresident)k
+0inputs+0outputs (0major+1449minor)pagefaults 0swaps
+
+run 8
+0.23user 0.01system 0:00.24elapsed 100%CPU (0avgtext+0avgdata 21632maxresident)k
+0inputs+0outputs (0major+1449minor)pagefaults 0swaps
+
+run 9
+0.23user 0.01system 0:00.24elapsed 100%CPU (0avgtext+0avgdata 21632maxresident)k
+0inputs+0outputs (0major+1449minor)pagefaults 0swaps
+
+run 10
+0.23user 0.01system 0:00.24elapsed 100%CPU (0avgtext+0avgdata 21632maxresident)k
+0inputs+0outputs (0major+1449minor)pagefaults 0swaps
+
+Testing testCBT10runs10000
+
+run 0
+2.10user 0.01system 0:02.12elapsed 99%CPU (0avgtext+0avgdata 21936maxresident)k
+0inputs+0outputs (0major+1468minor)pagefaults 0swaps
+
+run 1
+2.12user 0.00system 0:02.12elapsed 100%CPU (0avgtext+0avgdata 21936maxresident)k
+0inputs+0outputs (0major+1468minor)pagefaults 0swaps
+
+run 2
+2.08user 0.01system 0:02.09elapsed 100%CPU (0avgtext+0avgdata 21952maxresident)k
+0inputs+0outputs (0major+1469minor)pagefaults 0swaps
+
+run 3
+2.12user 0.00system 0:02.12elapsed 100%CPU (0avgtext+0avgdata 21936maxresident)k
+0inputs+0outputs (0major+1469minor)pagefaults 0swaps
+
+run 4
+2.08user 0.01system 0:02.09elapsed 100%CPU (0avgtext+0avgdata 21936maxresident)k
+0inputs+0outputs (0major+1468minor)pagefaults 0swaps
+
+run 5
+2.11user 0.00system 0:02.12elapsed 100%CPU (0avgtext+0avgdata 21936maxresident)k
+0inputs+0outputs (0major+1469minor)pagefaults 0swaps
+
+run 6
+2.07user 0.01system 0:02.09elapsed 100%CPU (0avgtext+0avgdata 21952maxresident)k
+0inputs+0outputs (0major+1469minor)pagefaults 0swaps
+
+run 7
+2.08user 0.00system 0:02.09elapsed 99%CPU (0avgtext+0avgdata 21952maxresident)k
+0inputs+0outputs (0major+1469minor)pagefaults 0swaps
+
+run 8
+2.12user 0.00system 0:02.12elapsed 100%CPU (0avgtext+0avgdata 21952maxresident)k
+0inputs+0outputs (0major+1469minor)pagefaults 0swaps
+
+run 9
+2.08user 0.00system 0:02.09elapsed 100%CPU (0avgtext+0avgdata 21936maxresident)k
+0inputs+0outputs (0major+1468minor)pagefaults 0swaps
+
+run 10
+2.10user 0.01system 0:02.11elapsed 100%CPU (0avgtext+0avgdata 21936maxresident)k
+0inputs+0outputs (0major+1468minor)pagefaults 0swaps
+
+Testing testCBT10runs100000
+
+run 0
+20.60user 0.01system 0:20.62elapsed 99%CPU (0avgtext+0avgdata 24000maxresident)k
+0inputs+0outputs (0major+1597minor)pagefaults 0swaps
+
+run 1
+20.83user 0.01system 0:20.85elapsed 99%CPU (0avgtext+0avgdata 24016maxresident)k
+0inputs+0outputs (0major+1598minor)pagefaults 0swaps
+
+run 2
+20.82user 0.02system 0:20.84elapsed 100%CPU (0avgtext+0avgdata 24016maxresident)k
+0inputs+0outputs (0major+1598minor)pagefaults 0swaps
+
+run 3
+20.84user 0.01system 0:20.85elapsed 100%CPU (0avgtext+0avgdata 24016maxresident)k
+0inputs+0outputs (0major+1598minor)pagefaults 0swaps
+
+run 4
+20.54user 0.03system 0:20.57elapsed 100%CPU (0avgtext+0avgdata 24016maxresident)k
+0inputs+0outputs (0major+1598minor)pagefaults 0swaps
+
+run 5
+20.80user 0.02system 0:20.83elapsed 100%CPU (0avgtext+0avgdata 24000maxresident)k
+0inputs+0outputs (0major+1598minor)pagefaults 0swaps
+
+run 6
+20.53user 0.02system 0:20.55elapsed 100%CPU (0avgtext+0avgdata 24016maxresident)k
+0inputs+0outputs (0major+1598minor)pagefaults 0swaps
+
+run 7
+20.85user 0.02system 0:20.87elapsed 100%CPU (0avgtext+0avgdata 24000maxresident)k
+0inputs+0outputs (0major+1597minor)pagefaults 0swaps
+
+run 8
+20.58user 0.01system 0:20.60elapsed 100%CPU (0avgtext+0avgdata 24000maxresident)k
+0inputs+0outputs (0major+1597minor)pagefaults 0swaps
+
+run 9
+20.83user 0.02system 0:20.85elapsed 100%CPU (0avgtext+0avgdata 24016maxresident)k
+0inputs+0outputs (0major+1598minor)pagefaults 0swaps
+
+run 10
+20.81user 0.01system 0:20.83elapsed 100%CPU (0avgtext+0avgdata 24016maxresident)k
+0inputs+0outputs (0major+1598minor)pagefaults 0swaps
+
+Testing testCBT6runs1000
+
+run 0
+0.02user 0.00system 0:00.02elapsed 103%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+run 1
+0.02user 0.00system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 19504maxresident)k
+0inputs+0outputs (0major+1316minor)pagefaults 0swaps
+
+run 2
+0.02user 0.00system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+run 3
+0.02user 0.00system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+run 4
+0.01user 0.01system 0:00.02elapsed 103%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+run 5
+0.01user 0.01system 0:00.02elapsed 110%CPU (0avgtext+0avgdata 19504maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+run 6
+0.01user 0.01system 0:00.02elapsed 103%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+run 7
+0.01user 0.01system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+run 8
+0.01user 0.01system 0:00.02elapsed 103%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+run 9
+0.02user 0.00system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1318minor)pagefaults 0swaps
+
+run 10
+0.01user 0.01system 0:00.02elapsed 103%CPU (0avgtext+0avgdata 19504maxresident)k
+0inputs+0outputs (0major+1316minor)pagefaults 0swaps
+
+Testing testCBT6runs10000
+
+run 0
+0.14user 0.01system 0:00.15elapsed 100%CPU (0avgtext+0avgdata 19504maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+run 1
+0.14user 0.01system 0:00.15elapsed 100%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+run 2
+0.14user 0.01system 0:00.15elapsed 99%CPU (0avgtext+0avgdata 19504maxresident)k
+0inputs+0outputs (0major+1316minor)pagefaults 0swaps
+
+run 3
+0.14user 0.01system 0:00.15elapsed 100%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+run 4
+0.14user 0.01system 0:00.15elapsed 100%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1318minor)pagefaults 0swaps
+
+run 5
+0.15user 0.00system 0:00.15elapsed 100%CPU (0avgtext+0avgdata 19504maxresident)k
+0inputs+0outputs (0major+1316minor)pagefaults 0swaps
+
+run 6
+0.13user 0.01system 0:00.15elapsed 100%CPU (0avgtext+0avgdata 19504maxresident)k
+0inputs+0outputs (0major+1316minor)pagefaults 0swaps
+
+run 7
+0.14user 0.00system 0:00.15elapsed 99%CPU (0avgtext+0avgdata 19504maxresident)k
+0inputs+0outputs (0major+1316minor)pagefaults 0swaps
+
+run 8
+0.14user 0.00system 0:00.15elapsed 100%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+run 9
+0.13user 0.01system 0:00.15elapsed 101%CPU (0avgtext+0avgdata 19504maxresident)k
+0inputs+0outputs (0major+1316minor)pagefaults 0swaps
+
+run 10
+0.14user 0.00system 0:00.15elapsed 101%CPU (0avgtext+0avgdata 19520maxresident)k
+0inputs+0outputs (0major+1317minor)pagefaults 0swaps
+
+Testing testCBT6runs100000
+
+run 0
+1.41user 0.00system 0:01.41elapsed 100%CPU (0avgtext+0avgdata 19648maxresident)k
+0inputs+0outputs (0major+1325minor)pagefaults 0swaps
+
+run 1
+1.39user 0.01system 0:01.40elapsed 100%CPU (0avgtext+0avgdata 19648maxresident)k
+0inputs+0outputs (0major+1325minor)pagefaults 0swaps
+
+run 2
+1.41user 0.00system 0:01.41elapsed 100%CPU (0avgtext+0avgdata 19648maxresident)k
+0inputs+0outputs (0major+1325minor)pagefaults 0swaps
+
+run 3
+1.37user 0.01system 0:01.38elapsed 100%CPU (0avgtext+0avgdata 19648maxresident)k
+0inputs+0outputs (0major+1325minor)pagefaults 0swaps
+
+run 4
+1.40user 0.01system 0:01.41elapsed 100%CPU (0avgtext+0avgdata 19648maxresident)k
+0inputs+0outputs (0major+1325minor)pagefaults 0swaps
+
+run 5
+1.40user 0.00system 0:01.40elapsed 100%CPU (0avgtext+0avgdata 19648maxresident)k
+0inputs+0outputs (0major+1325minor)pagefaults 0swaps
+
+run 6
+1.38user 0.00system 0:01.39elapsed 100%CPU (0avgtext+0avgdata 19664maxresident)k
+0inputs+0outputs (0major+1326minor)pagefaults 0swaps
+
+run 7
+1.38user 0.00system 0:01.39elapsed 100%CPU (0avgtext+0avgdata 19648maxresident)k
+0inputs+0outputs (0major+1325minor)pagefaults 0swaps
+
+run 8
+1.40user 0.00system 0:01.40elapsed 100%CPU (0avgtext+0avgdata 19648maxresident)k
+0inputs+0outputs (0major+1325minor)pagefaults 0swaps
+
+run 9
+1.40user 0.00system 0:01.41elapsed 100%CPU (0avgtext+0avgdata 19664maxresident)k
+0inputs+0outputs (0major+1326minor)pagefaults 0swaps
+
+run 10
+1.40user 0.00system 0:01.41elapsed 100%CPU (0avgtext+0avgdata 19664maxresident)k
+0inputs+0outputs (0major+1326minor)pagefaults 0swaps
+
+Testing testCBT8runs1000
+
+run 0
+0.06user 0.00system 0:00.06elapsed 100%CPU (0avgtext+0avgdata 19536maxresident)k
+0inputs+0outputs (0major+1318minor)pagefaults 0swaps
+
+run 1
+0.06user 0.00system 0:00.06elapsed 101%CPU (0avgtext+0avgdata 19536maxresident)k
+0inputs+0outputs (0major+1318minor)pagefaults 0swaps
+
+run 2
+0.06user 0.00system 0:00.06elapsed 100%CPU (0avgtext+0avgdata 19536maxresident)k
+0inputs+0outputs (0major+1318minor)pagefaults 0swaps
+
+run 3
+0.05user 0.01system 0:00.06elapsed 101%CPU (0avgtext+0avgdata 19536maxresident)k
+0inputs+0outputs (0major+1319minor)pagefaults 0swaps
+
+run 4
+0.05user 0.01system 0:00.06elapsed 101%CPU (0avgtext+0avgdata 19552maxresident)k
+0inputs+0outputs (0major+1319minor)pagefaults 0swaps
+
+run 5
+0.05user 0.01system 0:00.06elapsed 100%CPU (0avgtext+0avgdata 19536maxresident)k
+0inputs+0outputs (0major+1318minor)pagefaults 0swaps
+
+run 6
+0.05user 0.01system 0:00.06elapsed 100%CPU (0avgtext+0avgdata 19552maxresident)k
+0inputs+0outputs (0major+1319minor)pagefaults 0swaps
+
+run 7
+0.06user 0.00system 0:00.06elapsed 100%CPU (0avgtext+0avgdata 19536maxresident)k
+0inputs+0outputs (0major+1318minor)pagefaults 0swaps
+
+run 8
+0.05user 0.01system 0:00.06elapsed 101%CPU (0avgtext+0avgdata 19536maxresident)k
+0inputs+0outputs (0major+1318minor)pagefaults 0swaps
+
+run 9
+0.04user 0.02system 0:00.06elapsed 101%CPU (0avgtext+0avgdata 19552maxresident)k
+0inputs+0outputs (0major+1319minor)pagefaults 0swaps
+
+run 10
+0.06user 0.00system 0:00.06elapsed 101%CPU (0avgtext+0avgdata 19536maxresident)k
+0inputs+0outputs (0major+1318minor)pagefaults 0swaps
+
+Testing testCBT8runs10000
+
+run 0
+0.54user 0.00system 0:00.53elapsed 100%CPU (0avgtext+0avgdata 19584maxresident)k
+0inputs+0outputs (0major+1321minor)pagefaults 0swaps
+
+run 1
+0.52user 0.01system 0:00.53elapsed 100%CPU (0avgtext+0avgdata 19568maxresident)k
+0inputs+0outputs (0major+1320minor)pagefaults 0swaps
+
+run 2
+0.53user 0.00system 0:00.53elapsed 100%CPU (0avgtext+0avgdata 19568maxresident)k
+0inputs+0outputs (0major+1320minor)pagefaults 0swaps
+
+run 3
+0.53user 0.01system 0:00.54elapsed 100%CPU (0avgtext+0avgdata 19584maxresident)k
+0inputs+0outputs (0major+1321minor)pagefaults 0swaps
+
+run 4
+0.52user 0.01system 0:00.53elapsed 100%CPU (0avgtext+0avgdata 19568maxresident)k
+0inputs+0outputs (0major+1320minor)pagefaults 0swaps
+
+run 5
+0.52user 0.00system 0:00.53elapsed 100%CPU (0avgtext+0avgdata 19584maxresident)k
+0inputs+0outputs (0major+1321minor)pagefaults 0swaps
+
+run 6
+0.54user 0.00system 0:00.54elapsed 100%CPU (0avgtext+0avgdata 19568maxresident)k
+0inputs+0outputs (0major+1320minor)pagefaults 0swaps
+
+run 7
+0.53user 0.00system 0:00.53elapsed 100%CPU (0avgtext+0avgdata 19568maxresident)k
+0inputs+0outputs (0major+1321minor)pagefaults 0swaps
+
+run 8
+0.53user 0.01system 0:00.54elapsed 100%CPU (0avgtext+0avgdata 19584maxresident)k
+0inputs+0outputs (0major+1321minor)pagefaults 0swaps
+
+run 9
+0.53user 0.00system 0:00.53elapsed 100%CPU (0avgtext+0avgdata 19568maxresident)k
+0inputs+0outputs (0major+1320minor)pagefaults 0swaps
+
+run 10
+0.52user 0.01system 0:00.54elapsed 100%CPU (0avgtext+0avgdata 19568maxresident)k
+0inputs+0outputs (0major+1321minor)pagefaults 0swaps
+
+Testing testCBT8runs100000
+
+run 0
+5.21user 0.01system 0:05.22elapsed 100%CPU (0avgtext+0avgdata 20256maxresident)k
+0inputs+0outputs (0major+1363minor)pagefaults 0swaps
+
+run 1
+5.29user 0.00system 0:05.30elapsed 100%CPU (0avgtext+0avgdata 20256maxresident)k
+0inputs+0outputs (0major+1364minor)pagefaults 0swaps
+
+run 2
+5.27user 0.02system 0:05.29elapsed 100%CPU (0avgtext+0avgdata 20272maxresident)k
+0inputs+0outputs (0major+1365minor)pagefaults 0swaps
+
+run 3
+5.30user 0.00system 0:05.30elapsed 100%CPU (0avgtext+0avgdata 20256maxresident)k
+0inputs+0outputs (0major+1363minor)pagefaults 0swaps
+
+run 4
+5.22user 0.01system 0:05.23elapsed 100%CPU (0avgtext+0avgdata 20256maxresident)k
+0inputs+0outputs (0major+1363minor)pagefaults 0swaps
+
+run 5
+5.29user 0.02system 0:05.31elapsed 100%CPU (0avgtext+0avgdata 20272maxresident)k
+0inputs+0outputs (0major+1364minor)pagefaults 0swaps
+
+run 6
+5.23user 0.01system 0:05.24elapsed 100%CPU (0avgtext+0avgdata 20256maxresident)k
+0inputs+0outputs (0major+1363minor)pagefaults 0swaps
+
+run 7
+5.28user 0.01system 0:05.29elapsed 100%CPU (0avgtext+0avgdata 20256maxresident)k
+0inputs+0outputs (0major+1364minor)pagefaults 0swaps
+
+run 8
+5.29user 0.01system 0:05.31elapsed 100%CPU (0avgtext+0avgdata 20272maxresident)k
+0inputs+0outputs (0major+1364minor)pagefaults 0swaps
+
+run 9
+5.29user 0.01system 0:05.30elapsed 100%CPU (0avgtext+0avgdata 20256maxresident)k
+0inputs+0outputs (0major+1364minor)pagefaults 0swaps
+
+run 10
+5.21user 0.01system 0:05.22elapsed 100%CPU (0avgtext+0avgdata 20256maxresident)k
+0inputs+0outputs (0major+1363minor)pagefaults 0swaps
+
